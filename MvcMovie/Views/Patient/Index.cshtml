@@ -1,0 +1,9 @@
+@model List<Patient>
+
+<h2>List of Patients</h2>
+<ul>
+    @foreach (var patient in Model)
+    {
+        <li>@patient.Name</li>
+    }
+</ul>

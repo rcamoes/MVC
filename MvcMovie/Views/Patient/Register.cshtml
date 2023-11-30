@@ -1,0 +1,11 @@
+@model Patient
+
+<h2>Register as a Patient</h2>
+@using (Html.BeginForm("Register", "Patient", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+    </div>
+    <input type="submit" value="Register" />
+}

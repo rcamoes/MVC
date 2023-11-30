@@ -1,0 +1,15 @@
+@model Doctor
+
+<h2>Create a Doctor</h2>
+@using (Html.BeginForm("Create", "Doctor", FormMethod.Post))
+{
+    <div>
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Specialty)
+        @Html.TextBoxFor(model => model.Specialty)
+    </div>
+    <input type="submit" value="Create Doctor" />
+}

@@ -1,0 +1,9 @@
+@model List<Doctor>
+
+<h2>List of Doctors</h2>
+<ul>
+    @foreach (var doctor in Model)
+    {
+        <li>@doctor.Name - @doctor.Specialty</li>
+    }
+</ul>
